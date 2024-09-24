@@ -45,8 +45,9 @@ def test_lab1Question2_5():
     # Test case 5
     name = ""
     is_none = (lab1Question2(name) == None)
+    is_none_2 = (lab1Question2(name) is None)
     is_empty = (len(lab1Question2(name)) == 0)
-    assert (is_none or is_empty)
+    assert (is_none or is_empty or is_none_2)
 
 def test_lab1Question3_1():
     # Test case 1
